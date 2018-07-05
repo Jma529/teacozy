@@ -116,3 +116,6 @@ h2, h3, h4 {
   line-height: 2;
 
 }
+.copyright h5 {
+  text-align: left;
+}
