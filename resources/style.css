@@ -1,3 +1,5 @@
+/*Universal styles*/
+
 body {
   color: seashell;
   font-size: 22px;
@@ -11,13 +13,22 @@ body {
   text-align: center;
   margin: auto;
 }
-/* Header*/
 
 .flex-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap
+
 }
+
+h2, h3, h4 {
+  margin: 0;
+  padding: 10px;
+}
+/* Header*/
+
+
+
 header {
   display: inline-flex;
   height: 69px;
@@ -25,7 +36,7 @@ header {
   border-bottom: 1px solid seashell;
   position: fixed;
   z-index: 1;
-  flex-wrap: wrap;
+  background-color: black;
 }
 
 .logo img {
@@ -33,30 +44,34 @@ header {
   position: relative;
   padding-top: 10px;
 }
+
 .logo {
   display: flex;
   align-items: center;
   flex-grow: 1;
   padding-left: 10px;
 }
+
 header nav {
   padding-right: 10px;
 }
+
  nav span {
    display: inline-block;
    padding: 20px 10px;
-
  }
+
 nav {
   display: inline-flex;
   justify-content: center;
   margin: 0;
   text-align: right;
 }
+
 nav span a {
   color: seashell;
 }
-/* Top Content */
+/* Our Mission Content */
 
 #mission {
   max-height: 700px;
@@ -67,6 +82,7 @@ nav span a {
   flex-direction: column;
   overflow: hidden;
 }
+
 .our-mission {
   width: 100%;
   background-color: black;
@@ -75,13 +91,10 @@ nav span a {
   top: 300px;
   position: absolute;
   text-align: center;
-
-
 }
-h2, h3, h4 {
-  margin: 0;
-  padding: 10px;
-}
+
+/*Tea Content*/
+
 #tea-styles {
   height: 700px;
   width: 1000px;
@@ -89,23 +102,27 @@ h2, h3, h4 {
   padding-top: 150px;
   display: block;
 }
-}
+
 .item {
   padding: 5px;
 }
+
 .item img {
   width: 300px;
   height: 200px;
   margin: 10px;
   display: block;
 }
+
+/*Location Content*/
+
 #locations {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
   height: 500px;
   margin: 0 30px 0 30px;
   align-content: center;
-
 }
+
 .location {
   margin: 15px 20px 0 20px;
   width: 300px;
@@ -114,8 +131,10 @@ h2, h3, h4 {
   opacity: 1;
   padding-top: 15px;
   line-height: 2;
-
 }
+
+/*Copyright content*/
+
 .copyright h5 {
   text-align: left;
 }
