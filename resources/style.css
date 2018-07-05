@@ -6,15 +6,26 @@ body {
 
 }
 
+.main {
+  opacity: 0.9;
+  text-align: center;
+  margin: auto;
+}
+/* Header*/
 
-
-
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap
+}
 header {
   display: inline-flex;
   height: 69px;
   width: 100%;
   border-bottom: 1px solid seashell;
   position: fixed;
+  z-index: 1;
+  flex-wrap: wrap;
 }
 
 .logo img {
@@ -34,11 +45,45 @@ header nav {
  nav span {
    display: inline-block;
    padding: 20px 10px;
+
  }
 nav {
   display: inline-flex;
   justify-content: center;
+  margin: 0;
+  text-align: right;
 }
 nav span a {
   color: seashell;
+}
+/* Top Content */
+
+#mission {
+  max-height: 700px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  top: 70px;
+  flex-direction: column;
+  overflow: hidden;
+}
+.our-mission {
+  width: 100%;
+  background-color: black;
+  margin: auto;
+  z-index: 3;
+  top: 300px;
+  position: absolute;
+  text-align: center;
+
+}
+ h2 {
+   display: block;
+ }
+h4 {
+  display: block;
+}
+h2, h4 {
+  margin: 0;
+  padding: 10px;
 }
